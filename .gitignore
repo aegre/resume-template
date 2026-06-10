@@ -52,7 +52,6 @@ typings/
 *.tgz
 
 # dotenv environment variables file
-.env
 
 # Local resume copies (use submodule or example instead)
 src/data/resume.json
@@ -79,3 +78,4 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+config.bat
