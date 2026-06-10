@@ -112,6 +112,12 @@ Update snapshot baselines after intentional UI changes:
 npm run test:e2e:update
 ```
 
+Snapshots are platform-specific (`-darwin`, `-linux`) because font rendering differs by OS. CI runs on Linux — update Linux baselines with Docker when CI visual tests fail on fonts:
+
+```sh
+npm run test:e2e:update:linux
+```
+
 Debug failures interactively:
 
 ```sh

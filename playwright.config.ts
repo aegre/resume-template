@@ -21,7 +21,7 @@ export default defineConfig({
     },
   },
   snapshotPathTemplate:
-    "{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}{ext}",
+    "{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{platform}{ext}",
   webServer: {
     command: "npm run build:e2e && npm run serve",
     url: BASE_URL,
