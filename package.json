@@ -1,0 +1,72 @@
+{
+  "name": "resume-template",
+  "private": true,
+  "description": "Gatsby resume site",
+  "version": "0.1.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "build:e2e": "RESUME_USE_EXAMPLE=1 gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "resume:setup": "sh scripts/setup-resume-submodule.sh",
+    "resume:init": "git submodule update --init --recursive",
+    "resume:sync": "git submodule update --remote --merge",
+    "postinstall": "git submodule update --init --recursive 2>/dev/null || true",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:update": "playwright test --update-snapshots",
+    "test:e2e:ui": "playwright test --ui",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans": "^5.2.8",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/open-sans": "^5.2.7",
+    "@fontsource/source-sans-3": "^5.2.9",
+    "@jsonresume/schema": "^1.2.1",
+    "babel-plugin-styled-components": "^2.3.0",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-styled-components": "^6.16.0",
+    "html2pdf.js": "^0.14.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-feather": "^2.0.10",
+    "styled-components": "^6.4.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^25.9.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitest/coverage-v8": "^4.1.8",
+    "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
+    "lint-staged": "^17.0.7",
+    "prettier": "^3.8.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,css}": "prettier --write"
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Resume">
+  <rect width="32" height="32" rx="6" fill="#071425"/>
+  <rect x="9" y="7" width="14" height="18" rx="1.5" fill="#efb032"/>
+  <rect x="11.5" y="10.5" width="9" height="1.5" rx="0.75" fill="#071425"/>
+  <rect x="11.5" y="14" width="9" height="1.5" rx="0.75" fill="#071425"/>
+  <rect x="11.5" y="17.5" width="6" height="1.5" rx="0.75" fill="#071425"/>
+</svg>

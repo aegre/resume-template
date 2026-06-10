@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "nameLines": ["John", "Doe"],
+    "documentTitle": "JohnDoeResume"
+  },
+  "basics": {
+    "name": "John Doe",
+    "label": "Programmer",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "summary": "A summary of John Doe…",
+    "location": {
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/johndoe"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/johndoe"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Company",
+      "position": "President",
+      "location": "San Francisco",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "technologies": "HTML, CSS, JavaScript",
+      "highlights": ["Started the company"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description..."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "location": "San Francisco"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ]
+}
