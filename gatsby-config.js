@@ -10,4 +10,4 @@ module.exports = {
     description: "JSON Resume powered site",
   },
   plugins: ["gatsby-plugin-styled-components"],
-}
+};
